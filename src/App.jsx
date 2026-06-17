@@ -7,7 +7,8 @@ import About from './components/About';
 import SearchBar from './components/SearchBar';
 import './styles.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = `${API_BASE.replace(/\/$/, '')}/api`;
 
 export default function App() {
   const [entries, setEntries] = useState([]);

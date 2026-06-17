@@ -86,9 +86,11 @@ app.use((err, req, res, next) => {
 });
 
 mongoose
-  .connect(MONGO_URI)
+  .connect(MONGO_URI, {
+    serverSelectionTimeoutMS: 10000,
+  })
   .then(() => {
-    console.log(`MongoDB connected: ${MONGO_URI}`);
+    console.log('MongoDB connected successfully');
     app.listen(PORT, () => {
       console.log(`Server running on http://localhost:${PORT}`);
     });
