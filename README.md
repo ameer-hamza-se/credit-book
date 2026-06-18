@@ -28,28 +28,32 @@ This project allows you to:
 
 ## Project Structure
 
-- `src/` - frontend React components and pages
+- `frontend/` - all frontend React/Vite files (`src/`, `public/`, config files)
 - `backend/` - server and API logic
-- `public/` - static assets
+- `dist/` - build output
 
 ## Getting Started
 
-### 1. Install dependencies
+### 1. Install frontend dependencies
 
 ```bash
+cd frontend
 npm install
 ```
 
 ### 2. Start the frontend
 
 ```bash
+cd frontend
 npm run dev
 ```
 
 ### 3. Start the backend server
 
+From the project root:
+
 ```bash
-npm run server
+node backend/server.js
 ```
 
 ## Environment Setup
