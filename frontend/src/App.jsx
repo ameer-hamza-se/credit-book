@@ -7,7 +7,7 @@ import About from './components/about';
 import SearchBar from './components/SearchBar';
 import './styles.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://credit-book-fl7t.onrender.com';
 const API_URL = `${API_BASE.replace(/\/$/, '')}/api`;
 
 export default function App() {
