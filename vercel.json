@@ -1,10 +1,12 @@
 {
+  "version": 2,
   "cleanUrls": true,
   "framework": "vite",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "excludeFiles": ["backend/**", "backend"]
 }
