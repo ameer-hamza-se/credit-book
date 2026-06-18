@@ -43,9 +43,11 @@ app.get('/api/entries', async (req, res) => {
 app.post('/api/entries', async (req, res) => {
   try {
     const newEntry = await Entry.create(req.body);
-    console.log('New entry created:', newEntry);
+    console.log('Data stored successfully:');
+    console.log(JSON.stringify(newEntry, null, 2));
     res.status(201).json(newEntry);
   } catch (error) {
+    console.error('Error storing data:', error.message);
     res.status(400).json({ message: 'Failed to create entry', error: error.message });
   }
 });
