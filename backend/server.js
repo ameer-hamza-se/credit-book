@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/credit-book';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://ameerhamzatwd_db_user:Samsung@cluster.h0rzotz.mongodb.net/'
 
 app.use(cors());
 app.use(express.json());
