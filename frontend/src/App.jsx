@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import EntryForm from './components/EntryForm';
 import DataTable from './components/DataTable';
-import About from './components/About';
+import About from './components/about';
 import SearchBar from './components/SearchBar';
 import './styles.css';
 
